@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TextPreview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        android:layout_gravity="center_horizontal"
+        app:adUnitId="@string/text_preview_ad_unit"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:autofillHints="text"
+        tools:ignore="LabelFor"
+        android:text="@string/text_file"
+        />
+</LinearLayout>
+
+</ScrollView>
+</layout>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Pdf2txt" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">
+            @color/purple
+        </item>
+    </style>
+
+    <style name="Theme.Pdf2txt" parent="Base.Theme.Pdf2txt" />
+</resources>

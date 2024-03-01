@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pdf2txt</string>
+    <string name="pdf2text">PDF To Text</string>
+    <string name="clear">Clear</string>
+    <string name="open_result">Open Result</string>
+    <string name="convert_pdf_to_text">Convert PDF to Text</string>
+    <string name="preview">Preview</string>
+    <string name="select_pdf">Select PDF</string>
+    <string name="pdf_file">PDF File</string>
+    <string name="selected_file">No file selected</string>
+    <string name="text_result">Text Result</string>
+    <string name="text_file">No text result found</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="undo_changes">Undo Changes</string>
+    <string name="copy">Copy</string>
+    <string name="pdf_preview_ad_unit">ca-app-pub-9471515798383572/8191878808</string>
+    <string name="text_preview_ad_unit">ca-app-pub-9471515798383572/1593878534</string>
+    <string name="main_ad_unit">ca-app-pub-9471515798383572/5943235398</string>
+    <string name="onboard_ad_unit">ca-app-pub-9471515798383572/7258071087</string>
+</resources>

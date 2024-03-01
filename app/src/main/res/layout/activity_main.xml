@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+            >
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30sp">
+
+                <Button
+                    android:id="@+id/select_pdf"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:backgroundTint="@color/colorGray"
+                    android:padding="10sp"
+                    android:text="@string/select_pdf"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:cornerRadius="2pt" />
+
+                <Button
+                    android:id="@+id/preview"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:alpha="0.4"
+                    android:backgroundTint="@color/colorGray"
+                    android:enabled="false"
+                    android:padding="10sp"
+                    android:text="@string/preview"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:cornerRadius="2pt" />
+
+                <Button
+                    android:id="@+id/clear_text"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30sp"
+                    android:alpha="0.4"
+                    android:backgroundTint="@color/colorGray"
+                    android:enabled="false"
+                    android:padding="10sp"
+                    android:text="@string/clear"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:cornerRadius="2pt" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pdf_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:paddingHorizontal="10sp"
+                android:text="@string/pdf_file"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:backgroundTint="@color/colorGray"
+                android:paddingHorizontal="10sp"
+                android:text="@string/selected_file"
+                android:textColor="@color/royal_blue"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/convert"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="30sp"
+                android:alpha="0.4"
+                android:backgroundTint="@color/colorGray"
+                android:enabled="false"
+                android:padding="10sp"
+                android:text="@string/convert_pdf_to_text"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:cornerRadius="2pt" />
+
+            <Button
+                android:id="@+id/result"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="30sp"
+                android:alpha="0.4"
+                android:backgroundTint="@color/colorGray"
+                android:enabled="false"
+                android:padding="10sp"
+                android:text="@string/open_result"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:cornerRadius="2pt" />
+
+            <TextView
+                android:id="@+id/text_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:backgroundTint="@color/colorGray"
+                android:paddingHorizontal="10sp"
+                android:text="@string/text_result"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:backgroundTint="@color/colorGray"
+                android:paddingHorizontal="10sp"
+                android:text="@string/text_file"
+                android:textColor="@color/royal_blue"
+                android:textSize="14sp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:adSize="BANNER"
+                    app:adUnitId="@string/main_ad_unit"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>
+
+</layout>
