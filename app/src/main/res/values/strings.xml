@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Pdf2txt</string>
-    <string name="pdf2text">PDF To Text</string>
+    <string name="app_name">Pdf To Text</string>
+    <string name="pdf2text">Pdf To Text</string>
     <string name="clear">Clear</string>
     <string name="open_result">Open Result</string>
     <string name="convert_pdf_to_text">Convert PDF to Text</string>
@@ -17,4 +17,5 @@
     <string name="text_preview_ad_unit">ca-app-pub-9471515798383572/1593878534</string>
     <string name="main_ad_unit">ca-app-pub-9471515798383572/5943235398</string>
     <string name="onboard_ad_unit">ca-app-pub-9471515798383572/7258071087</string>
+    <string name="title_activity_compose_preview_pdf">composePreviewPDF</string>
 </resources>
